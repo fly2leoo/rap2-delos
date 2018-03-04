@@ -11,11 +11,11 @@ let config: IConfigOptions =  {
   },
   db: {
     dialect: 'mysql',
-    host: 'localhost',
+    host: '101.201.153.140',
     port: 3306,
-    username: 'root',
-    password: '',
-    database: 'RAP2_DELOS_APP',
+    username: 'emulian_dba',
+    password: 'weR1team',
+    database: 'emulian_rap2',
     pool: {
       max: 5,
       min: 0,

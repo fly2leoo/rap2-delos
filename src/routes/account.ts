@@ -102,7 +102,8 @@ router.get('/account/logout', async(ctx) => {
 })
 
 router.post('/account/register', async(ctx) => {
-  let { fullname, email, password } = ctx.request.body
+  let { fullname, email, password, emailext } = ctx.request.body
+  email = email + emailext
   let exists = await User.findAll({
     where: { email }
   })
